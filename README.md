@@ -13,17 +13,17 @@ Fuzzapi is rails application which uses API_Fuzzer and provide UI solution for g
 
 # Setup
 
-1. Install ruby in your machine either using `rvm` or `rbenv`
+1. Install ruby Version 2.3.0 in your machine either using `rvm` or `rbenv install 2.3.0 && rbenv global 2.3.0` https://linuxize.com/post/how-to-install-ruby-on-ubuntu-18-04/
 
 2. Clone the repository into your localmachine
 
 3. `cd /path/Fuzzapi/bin`, move to Fuzzapi directory
 
-4. `bundle install` to install the gem dependencies of the application
+4. `/path/Fuzzapi/bin/bundle install` to install the gem dependencies of the application
 
-5. `rake db:migrate` to creates tables, migrations etc.
+5. `/path/Fuzzapi/bin/rake db:migrate` to creates tables, migrations etc.
 
-6. `rails s` to run the server and run `export REDIS_URL=redis://127.0.0.1:6379/0 && bundle exec sidekiq` to run sidekiq.
+6. `/path/Fuzzapi/bin/rails s` to run the server and run `export REDIS_URL=redis://127.0.0.1:6379/0 && bundle exec sidekiq` to run sidekiq.
 
 7. Open `http://localhost:3000` in browser which should point to the application url
 
